@@ -1,0 +1,147 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ERROR TEXT */
+.error {
+    color: red;
+    font-size: 13px;
+    display: block;
+    text-align: left;
+    margin-top: 3px;
+}
+
+/* BODY (DO NOT CENTER BODY) */
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg,
+            #ff9933 0%,
+            #ffffff 50%,
+            #138808 100%);
+
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background: url("../images/ashoka-chakra.png") no-repeat center;
+    background-size: contain;
+    opacity: 0.08;
+    z-index: 0;
+}
+
+.page-content {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* EDIT PROFILE BOX */
+.edit-profile-box {
+    width: 400px;
+    max-width: 90%;
+    background: rgba(255, 255, 255, 0.97);
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 100px;
+    /* offset for navbar */
+    margin-bottom: 40px;
+}
+
+/* TITLE */
+.edit-profile-box h1 {
+    color: #138808;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+/* CHAKRA */
+.chakra {
+    width: 60px;
+    margin: 10px auto;
+    display: block;
+}
+
+/* TAGLINE */
+.tagline {
+    font-weight: bold;
+    margin-bottom: 22px;
+    color: #333333;
+}
+
+/* INPUTS */
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+}
+
+
+input:focus,
+select:focus {
+    border-color: #138808;
+    outline: none;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 22px;
+    background: linear-gradient(to right, #138808, #0f6b05);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* MESSAGE */
+.msg {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+
+/* CANCEL LINK */
+.cancel-link {
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.cancel-link a {
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cancel-link a:hover {
+    text-decoration: underline;
+    color: #333;
+}

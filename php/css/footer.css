@@ -1,0 +1,30 @@
+.footer {
+    width: 100%;
+    padding: 25px 20px;
+    text-align: center;
+
+    background: linear-gradient(to right, #ff9933, #ffffff, #138808);
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.12);
+}
+
+.footer-links {
+    margin: 15px 0;
+}
+
+.title{
+        font-weight: bold;
+
+}
+.footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0f6b05;
+    font-weight: 600;
+}
+
+.footer-bottom {
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
